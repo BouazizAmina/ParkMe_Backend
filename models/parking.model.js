@@ -9,6 +9,9 @@ module.exports = (sequelize, Sequelize) => {
         nom: {
             type: Sequelize.STRING
         },
+        commune: {
+            type: Sequelize.STRING
+        },
         Longitude:{
             type: Sequelize.FLOAT
         },

@@ -8,6 +8,6 @@ module.exports = function(app) {
       next();
 });
 
-app.post("/utilisateur/seConnecter", controller.seconnecter);
+app.post("/utilisateur/seconnecter", controller.seconnecter);
 app.post("/utilisateur/sinscrire", controller.sinscrire);
 }
