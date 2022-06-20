@@ -1,6 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 const db = require("./models");
 // db.sequelize.sync({force: true}).then(() => {
 //   console.log('Drop and Resync Db');
@@ -21,9 +23,9 @@ app.get("/", (req, res) => {
 });
 require('./routes/auth_insc.routes')(app);
 require('./routes/parking.routes')(app);
+require('./routes/reservation.routes')(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8089;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-    
