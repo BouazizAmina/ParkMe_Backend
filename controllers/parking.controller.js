@@ -19,7 +19,7 @@ exports.getAllParkings = (req,res) =>{
             // console.log(k + ' - ' + parks[k].id);
             config = {
                 method: 'get',
-                url: 'https://api.mapbox.com/directions-matrix/v1/mapbox/driving/'+park.Longitude+','+park.Latitude+';-122.45,37.91;-122.48,37.73?'
+                url: 'https://api.mapbox.com/directions-matrix/v1/mapbox/driving/'+park.Longitude+','+park.Latitude+';-122.45,37.91;'+req.body.lon+','+req.body.lat+'?'
                             + 'access_token='+process.env.ACCESS_TOKEN,
                 headers: { }
             };
