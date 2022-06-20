@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/BouazizAmina/ParkMe_Backend#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "pg": "^8.7.3",
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "google-distance-matrix": "^1.1.1",
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.8.2",
+    "pg": "^8.7.3",
     "request": "^2.88.2",
     "sequelize": "^6.19.2"
   }

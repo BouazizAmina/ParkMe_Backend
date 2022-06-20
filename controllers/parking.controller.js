@@ -47,6 +47,7 @@ exports.getAllParkings = (req,res) =>{
         ).then(r=>{
             
             console.log("///////////////////before///////////////////////////////");
+            // console.log(parkings);
             return res.status(200).send({parkings});
         })
         .catch(err => {
@@ -57,6 +58,17 @@ exports.getAllParkings = (req,res) =>{
         res.status(500).send({ message: err.message })
     });
 }
+
+// exports.getAllParkings = (req,res) =>{
+//     parking.findAll()
+//     .then(parks =>{
+//         console.log(parks);
+//         return res.status(200).send(parks);
+//     })
+//     .catch(err => {
+//         res.status(500).send({ message: err.message })
+//     });
+// }
 
 exports.getParkingById = (req,res) =>{
     parking.findOne({
