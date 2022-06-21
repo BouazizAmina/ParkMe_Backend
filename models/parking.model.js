@@ -30,6 +30,16 @@ module.exports = (sequelize, Sequelize) => {
         prix:{
             type: Sequelize.INTEGER,
         }
+        // ,
+        // etat:{
+        //     type: Sequelize.STRING,
+        // },
+        // tempsOuv:{
+        //     type: Sequelize.STRING,
+        // },
+        // tempsFerm:{
+        //     type: Sequelize.STRING,
+        // }
 
     });
     return Parking;
