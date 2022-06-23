@@ -7,6 +7,6 @@ module.exports = function(app) {
       );
       next();
 });
-app.get("/parkings/getAllParkings", controller.getAllParkings);
+app.post("/parkings/getAllParkings", controller.getAllParkings);
 app.get("/parkings/getParkingById", controller.getParkingById);
 }
