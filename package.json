@@ -29,6 +29,7 @@
     "mapbox": "^1.0.0-beta10",
     "mapbox-gl": "^2.8.2",
     "pg": "^8.7.3",
+    "qrcode": "^1.5.0",
     "request": "^2.88.2",
     "sequelize": "^6.19.2"
   }

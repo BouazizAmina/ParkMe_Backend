@@ -29,3 +29,25 @@ const PORT = process.env.PORT || 8089;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
+
+const QRCode = require('qrcode')
+ 
+// Creating the data
+let data = {
+    age:27
+}
+ 
+// Converting the data into String format
+let stringdata = JSON.stringify(27)
+QRCode.toString(stringdata,{type:'terminal'},function (err, qrcode) {
+  if(err) return console.log("error occurred")
+  console.log(qrcode)
+})
+   
+// Converting the data into base64
+QRCode.toDataURL(stringdata, function (err, code) {
+    if(err) return console.log("error occurred")
+ 
+    // Printing the code
+    //console.log(code)
+})

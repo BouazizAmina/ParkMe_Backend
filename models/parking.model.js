@@ -35,6 +35,9 @@ module.exports = (sequelize, Sequelize) => {
         },
         tempsFerm:{
             type: Sequelize.STRING,
+        },
+        duree:{
+            type: Sequelize.DOUBLE,
         }
 
     });

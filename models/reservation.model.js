@@ -8,10 +8,16 @@ module.exports = (sequelize, Sequelize) => {
             default: null
         },
         tempsDebut:{
-            type : Sequelize.DATE
+            type : Sequelize.STRING
         },
-        duree:{
-            type: DataTypes.TIME,
+        tempsFin:{
+            type : Sequelize.STRING
+        },
+        numeroPlace:{
+            type: Sequelize.INTEGER
+        },
+        montant:{
+            type:Sequelize.INTEGER
         }
     });
     return Reservation;
